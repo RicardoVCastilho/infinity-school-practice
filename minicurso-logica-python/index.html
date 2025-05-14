@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício Completo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #saida {
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💻 Introdução de Lógica com JS</h1>
+  <div id="saida"></div>
+
+  <script>
+    const saida = document.getElementById("saida");
+
+    // 1. Mensagem de boas-vindas
+    saida.innerHTML += "👋 Seja bem-vindo ao programa de demonstração!<br>";
+    console.log("Exibindo mensagem de boas-vindas no console.");
+
+   // 2. Solicita o nome
+    let nome = prompt("Digite seu nome:");
+    saida.innerHTML += `Olá, <strong>${nome}</strong>!<br>`;
+    console.log("Nome do usuário:", nome);
+
+    // 3. Solicita a idade
+    let idade = parseInt(prompt("Digite sua idade:"));
+    console.log("Idade informada:", idade);
+
+    let msgIdade = idade >= 18
+      ? `Você tem ${idade} anos, então é maior de idade.`
+      : `Você tem ${idade} anos, então é menor de idade.`;
+
+    saida.innerHTML += msgIdade + "<br>";
+    console.log("Resultado da verificação de idade:", msgIdade);
+
+    // 4. Loop com saída formatada
+    let loopHTML = "<br><strong>Contagem de 1 a 5:</strong><ul>";
+    for (let i = 1; i <= 5; i++) {
+      loopHTML += `<li>Número ${i}</li>`;
+      console.log(`Loop no console: ${i}`);
+    }
+    loopHTML += "</ul>";
+    saida.innerHTML += loopHTML;
+  // </script>
+
+<a href="./numero-secreto.html">Jogo do Número Secreto</a>
+
+</body>
+</html>

@@ -19,7 +19,7 @@
 
 /* Pseudo-elemento ::before - ícone antes do texto */
 .comment-text::before {
-    content: "🗣️ "; /* Ícone de fala */
+    content: "🗣️ ";
     font-size: 24px;
     margin-right: 10px;
 }

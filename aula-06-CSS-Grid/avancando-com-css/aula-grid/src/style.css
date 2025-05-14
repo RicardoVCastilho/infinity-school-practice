@@ -10,7 +10,7 @@
 
 .header {
     grid-area: header;
-    background-color: lightblue;
+    background-color:lightblue;
     padding: 20px;
     text-align: center;
 }
@@ -20,6 +20,7 @@
     background-color: lightgreen;
     padding: 20px;
 }
+
 .main {
     grid-area: main;
     background-color: lightcoral;
@@ -30,4 +31,5 @@
     grid-area: footer;
     background-color: lightgray;
     padding: 20px;
+    text-align: center;
 }
